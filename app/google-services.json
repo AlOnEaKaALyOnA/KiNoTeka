@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "975933320774",
+    "firebase_url": "https://kinoteka-7be80-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "kinoteka-7be80",
+    "storage_bucket": "kinoteka-7be80.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:975933320774:android:510b90276b2ac913c56447",
+        "android_client_info": {
+          "package_name": "com.example.kinoteka"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "975933320774-vn5hmiefg7o4uqsr3b325khepudf2cot.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyASE2Y632Hc3zcyAYgGyaXCusPh45YoOmI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "975933320774-vn5hmiefg7o4uqsr3b325khepudf2cot.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
