@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fon"
+    android:background="@drawable/register_fon"
     tools:context=".RegisterActivity">
 
     <ImageView
@@ -27,8 +27,8 @@
         android:layout_marginLeft="25dp"
         android:hint="Имя пользователя"
         android:inputType="text"
-        android:textColorHint="@android:color/white"
-        android:textColor="@android:color/white"
+        android:textColorHint="@color/perl"
+        android:textColor="@color/perl"
         android:textSize="20sp"
         android:textStyle="bold"
         />
@@ -45,11 +45,10 @@
         android:layout_marginLeft="25dp"
         android:hint="Номер телефона"
         android:inputType="number"
-        android:textColorHint="@android:color/white"
-        android:textColor="@android:color/white"
+        android:textColorHint="@color/perl"
+        android:textColor="@color/perl"
         android:textSize="20sp"
-        android:textStyle="bold"
-        />
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/register_password_input"
@@ -63,8 +62,8 @@
         android:layout_marginLeft="25dp"
         android:hint="Пароль"
         android:inputType="textPassword"
-        android:textColorHint="@android:color/white"
-        android:textColor="@android:color/white"
+        android:textColorHint="@color/perl"
+        android:textColor="@color/perl"
         android:textSize="20sp"
         android:textStyle="bold"
         />

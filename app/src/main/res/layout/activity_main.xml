@@ -9,10 +9,10 @@
 
     <ImageView
         android:id="@+id/kinologo"
-        android:layout_width="330dp"
+        android:layout_width="350dp"
         android:layout_height="120dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="160dp"
         android:src="@drawable/kinologo" />
 
     <TextView
@@ -23,7 +23,7 @@
         android:layout_centerHorizontal="true"
         android:textAlignment="center"
         android:text="Фильмы здесь"
-        android:textColor="@color/white"
+        android:textColor="@color/perl"
         android:textSize="30dp"
         android:textStyle="bold|italic"
         />
@@ -58,5 +58,7 @@
         android:textAllCaps="false"
         android:textColor="@android:color/white"
         android:textSize="22sp" />
+    
+
 
 </RelativeLayout>

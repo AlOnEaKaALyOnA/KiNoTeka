@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="orange">#ffa500</color>
+    <color name="perl">#8673a1</color>
+    <color name="pirple">#8b00ff</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="svetperl">#bcb2cb</color>
+    <color name="svet2perl">#a395b8</color>
+    <color name="svet3perl">#dcd9e2</color>
 </resources>

@@ -13,6 +13,7 @@ import android.widget.Toast;
 
 import com.example.kinoteka.Model.Users;
 import com.example.kinoteka.Prevalent.Prevalent;
+import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
