@@ -99,5 +99,13 @@
         android:textAllCaps="false"
         android:textColor="@color/svet3perl"
         android:textSize="22sp" />
+
+    <ImageView
+        android:id="@+id/NAZAD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        app:srcCompat="@drawable/baseline_keyboard_backspace_24" />
     
 </RelativeLayout>

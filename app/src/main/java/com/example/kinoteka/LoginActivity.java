@@ -11,6 +11,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.example.kinoteka.Model.Users;
@@ -27,6 +28,8 @@ public class LoginActivity extends AppCompatActivity {
 
     private Button loginBtn;
     private EditText usernameInput, phoneInput, passwordInput;
+
+    private ImageView nazad;
     private ProgressDialog loadingBar;
     
     private String parentDbName = "Users";
@@ -36,6 +39,17 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
+        nazad = (ImageView) findViewById(R.id.NAZAD);
+
+        nazad.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent NAZADIntent = new Intent(LoginActivity.this, MainActivity.class);
+                startActivity(NAZADIntent);
+            }
+        });
+
 
         loginBtn = (Button) findViewById(R.id.login_btn);
         phoneInput = (EditText) findViewById(R.id.login_phone_input);

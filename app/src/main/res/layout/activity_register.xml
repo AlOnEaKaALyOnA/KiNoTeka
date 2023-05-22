@@ -81,7 +81,14 @@
         android:text="Регистрация"
         android:textAllCaps="false"
         android:textSize="22sp"
-        android:textColor="@android:color/white"
-        />
+        android:textColor="@android:color/white" />
+
+    <ImageView
+        android:id="@+id/STRELKA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        app:srcCompat="@drawable/baseline_keyboard_backspace_24" />
 
 </RelativeLayout>

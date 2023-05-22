@@ -54,10 +54,9 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        String UserPhoneKey = Paper.book().read(Prevalent.UserPhoneKey);
-        String UserPasswordKey = Paper.book().read(Prevalent.UserPasswordKey);
-
-        if(UserPhoneKey != "" && UserPasswordKey != "")
+/*        String UserPhoneKey = Paper.book().read(Prevalent.UserPhoneKey);
+       String UserPasswordKey = Paper.book().read(Prevalent.UserPasswordKey);
+      if(UserPhoneKey != "" && UserPasswordKey != "")
         {
             if(!TextUtils.isEmpty(UserPhoneKey) && !TextUtils.isEmpty(UserPasswordKey))
             {
@@ -105,7 +104,7 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(MainActivity.this, "Аккаунт с номером" +phone + "Не существует", Toast.LENGTH_SHORT).show();
                     Intent registerIntent = new Intent(MainActivity.this, RegisterActivity.class);
                     startActivity(registerIntent);
-                }
+               }
             }
 
             @Override
@@ -113,5 +112,5 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-    }
+*/    }
 }

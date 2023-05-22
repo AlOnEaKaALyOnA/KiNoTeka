@@ -10,6 +10,7 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -25,6 +26,8 @@ import java.util.HashMap;
 public class RegisterActivity extends AppCompatActivity {
 
     private Button registerBtn;
+
+    private ImageView Strela;
     private EditText usernameInput, phoneInput, passwordInput;
     private ProgressDialog loadingBar;
 
@@ -33,11 +36,23 @@ public class RegisterActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
 
+        Strela = (ImageView) findViewById(R.id.STRELKA);
+
+        Strela.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent StrelaIntent = new Intent (RegisterActivity.this, MainActivity.class);
+                startActivity(StrelaIntent);
+            }
+        });
+
         registerBtn = (Button) findViewById(R.id.register_btn);
         usernameInput = (EditText) findViewById(R.id.register_username_input);
         phoneInput = (EditText) findViewById(R.id.register_phone_input);
         passwordInput = (EditText) findViewById(R.id.register_password_input);
+
         loadingBar = new ProgressDialog(this);
+
 
         registerBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -46,6 +61,7 @@ public class RegisterActivity extends AppCompatActivity {
             }
         });
     }
+
 
     private void CreateAccount() {
         String username = usernameInput.getText().toString();
