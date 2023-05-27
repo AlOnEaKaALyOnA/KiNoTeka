@@ -5,13 +5,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/register_fon"
     tools:context=".HomeActivity">
+
+    <ImageView
+        android:id="@+id/exit_app"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/kinologo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_exit_to_app_24" />
 
     <ImageView
         android:id="@+id/kinologo"
         android:layout_width="365dp"
         android:layout_height="62dp"
         android:layout_centerHorizontal="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
         android:src="@drawable/kinologo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -21,12 +33,27 @@
         android:id="@+id/genreRecycler"
         android:layout_width="351dp"
         android:layout_height="24dp"
-        android:layout_marginStart="15dp"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.488"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/kinologo" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/movieRecycler"
+        android:layout_width="370dp"
+        android:layout_height="550dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/genreRecycler"
+        app:layout_constraintVertical_bias="0.066" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

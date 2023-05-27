@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">KiNoTeka</string>
+    <string name="Genre_Mov">Жанр:</string>
+    <string name="date_vixoda">Дата выпуска:</string>
 </resources>
