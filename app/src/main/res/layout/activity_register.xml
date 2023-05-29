@@ -20,18 +20,17 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/kinologo"
-        android:background="@drawable/input_design"
-        android:padding="15dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginRight="25dp"
         android:layout_marginLeft="25dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/input_design"
         android:hint="Имя пользователя"
         android:inputType="text"
-        android:textColorHint="@color/perl"
+        android:padding="15dp"
         android:textColor="@color/perl"
+        android:textColorHint="@color/perl"
         android:textSize="20sp"
-        android:textStyle="bold"
-        />
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/register_phone_input"

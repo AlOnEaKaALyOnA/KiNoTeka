@@ -9,6 +9,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.kinoteka.HomeActivity;
 import com.example.kinoteka.Model.Genre;
 import com.example.kinoteka.R;
 
@@ -36,6 +37,14 @@ public class GenreAdapter extends RecyclerView.Adapter<GenreAdapter.GenreViewHol
 
         holder.genreTitle.setText(genreies.get(position).getTitle());
 
+
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                HomeActivity.showMovieByCategories(genreies.get(position).getId());
+
+            }
+        });
     }
 
     @Override

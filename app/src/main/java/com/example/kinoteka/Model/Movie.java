@@ -2,10 +2,10 @@ package com.example.kinoteka.Model;
 
 public class Movie {
 
-    int id;
+    int id, category;
     String img, title, date, color,level, text;
 
-    public Movie(int id, String img, String title, String date, String color, String level, String text) {
+    public Movie(int id, String img, String title, String date, String color, String level, String text, int category) {
         this.id = id;
         this.img = img;
         this.title = title;
@@ -13,6 +13,15 @@ public class Movie {
         this.color = color;
         this.level = level;
         this.text = text;
+        this.category = category;
+    }
+
+    public int getCategory() {
+        return category;
+    }
+
+    public void setCategory(int category) {
+        this.category = category;
     }
 
     public String getText() {

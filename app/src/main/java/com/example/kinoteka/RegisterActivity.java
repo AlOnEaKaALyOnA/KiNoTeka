@@ -70,15 +70,15 @@ public class RegisterActivity extends AppCompatActivity {
 
         if(TextUtils.isEmpty(username))
         {
-            Toast.makeText(this, "Введите имя", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Введите имя", Toast.LENGTH_LONG).show();
         }
         else if(TextUtils.isEmpty(phone))
         {
-            Toast.makeText(this, "Введите номер", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Введите номер", Toast.LENGTH_LONG).show();
         }
         else if(TextUtils.isEmpty(password))
         {
-            Toast.makeText(this, "Введите пароль", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Введите пароль", Toast.LENGTH_LONG).show();
         }
         else
         {
@@ -113,14 +113,14 @@ public class RegisterActivity extends AppCompatActivity {
                             if(task.isSuccessful())
                             {
                                 loadingBar.dismiss();
-                                Toast.makeText(RegisterActivity.this, "Регистрация прошла успешно.", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(RegisterActivity.this, "Регистрация прошла успешно.", Toast.LENGTH_LONG).show();
                                 Intent loginIntent = new Intent(RegisterActivity.this, LoginActivity.class);
                                 startActivity(loginIntent);
                             }
                             else
                             {
                                 loadingBar.dismiss();
-                                Toast.makeText(RegisterActivity.this, "Ошибка.", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(RegisterActivity.this, "Ошибка.", Toast.LENGTH_LONG).show();
                             }
                         }
                     });
@@ -128,7 +128,7 @@ public class RegisterActivity extends AppCompatActivity {
                 else
                 {
                     loadingBar.dismiss();
-                    Toast.makeText(RegisterActivity.this, "Номер" +phone+ "уже зарегистрирован", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(RegisterActivity.this, "Номер" +phone+ "уже зарегистрирован", Toast.LENGTH_LONG).show();
                     Intent loginIntent = new Intent(RegisterActivity.this, LoginActivity.class);
                     startActivity(loginIntent);
                 }

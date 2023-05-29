@@ -9,6 +9,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import com.example.kinoteka.Model.Order;
 
 import org.w3c.dom.Text;
 
@@ -44,4 +47,12 @@ public class MovieInfo extends AppCompatActivity {
         movieLevel.setText(getIntent().getStringExtra("movieLevel"));
         movieDate.setText(getIntent().getStringExtra("movieDate"));
     }
+
+    public void addToCart(View view){
+
+        int item_id = getIntent().getIntExtra("movieId",0);
+        Order.items_id.add(item_id);
+        Toast.makeText(this, "Добавлено в избранное!", Toast.LENGTH_LONG).show();
+    }
+
 }

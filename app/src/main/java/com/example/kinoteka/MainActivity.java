@@ -54,11 +54,11 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-/*        String UserPhoneKey = Paper.book().read(Prevalent.UserPhoneKey);
+      String UserPhoneKey = Paper.book().read(Prevalent.UserPhoneKey);
        String UserPasswordKey = Paper.book().read(Prevalent.UserPasswordKey);
-      if(UserPhoneKey != "" && UserPasswordKey != "")
+        if(!TextUtils.isEmpty(UserPhoneKey) && !TextUtils.isEmpty(UserPasswordKey))
         {
-            if(!TextUtils.isEmpty(UserPhoneKey) && !TextUtils.isEmpty(UserPasswordKey))
+            if(!UserPhoneKey.equals("") && !UserPasswordKey.equals(""))
             {
                 ValidateUser(UserPhoneKey,UserPasswordKey);
 
@@ -87,7 +87,7 @@ public class MainActivity extends AppCompatActivity {
                         if(usersData.getPassword().equals(password))
                         {
                             loadingBar.dismiss();
-                            Toast.makeText(MainActivity.this, "Успешный вход", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(MainActivity.this, "Успешный вход", Toast.LENGTH_LONG).show();
                             Intent homeIntent = new Intent(MainActivity.this, HomeActivity.class);
                             startActivity(homeIntent);
 
@@ -101,7 +101,7 @@ public class MainActivity extends AppCompatActivity {
                 else
                 {
                     loadingBar.dismiss();
-                    Toast.makeText(MainActivity.this, "Аккаунт с номером" +phone + "Не существует", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "Аккаунт с номером" +phone + "Не существует", Toast.LENGTH_LONG).show();
                     Intent registerIntent = new Intent(MainActivity.this, RegisterActivity.class);
                     startActivity(registerIntent);
                }
@@ -112,5 +112,5 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-*/    }
+    }
 }

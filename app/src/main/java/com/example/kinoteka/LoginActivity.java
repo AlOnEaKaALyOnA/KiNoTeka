@@ -74,11 +74,11 @@ public class LoginActivity extends AppCompatActivity {
 
         if(TextUtils.isEmpty(phone))
         {
-            Toast.makeText(this, "Введите номер", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Введите номер", Toast.LENGTH_LONG).show();
         }
         else if(TextUtils.isEmpty(password))
         {
-            Toast.makeText(this, "Введите пароль", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Введите пароль", Toast.LENGTH_LONG).show();
         }
         else
         {
@@ -93,11 +93,7 @@ public class LoginActivity extends AppCompatActivity {
 
     private void ValidateUser(String phone, String password)
     {
-        if(checkBoxRememberMe.isChecked())
-        {
-            Paper.book().write(Prevalent.UserPhoneKey, phone);
-            Paper.book().write(Prevalent.UserPasswordKey, password);
-        }
+
 
 
         final DatabaseReference RootRef;
@@ -115,22 +111,27 @@ public class LoginActivity extends AppCompatActivity {
                         if(usersData.getPassword().equals(password))
                         {
                             loadingBar.dismiss();
-                            Toast.makeText(LoginActivity.this, "Успешный вход", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(LoginActivity.this, "Успешный вход", Toast.LENGTH_LONG).show();
                             Intent homeIntent = new Intent(LoginActivity.this, HomeActivity.class);
                             startActivity(homeIntent);
+                            if(checkBoxRememberMe.isChecked())
+                            {
+                                Paper.book().write(Prevalent.UserPhoneKey, phone);
+                                Paper.book().write(Prevalent.UserPasswordKey, password);
+                            }
 
                         }
                         else
                         {
                             loadingBar.dismiss();
-                            Toast.makeText(LoginActivity.this, "Неверный пароль", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(LoginActivity.this, "Неверный пароль", Toast.LENGTH_LONG).show();
                         }
                     }
                 }
                 else
                 {
                     loadingBar.dismiss();
-                    Toast.makeText(LoginActivity.this, "Аккаунт с номером" +phone + "Не существует", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(LoginActivity.this, "Аккаунт с номером" +phone + "Не существует", Toast.LENGTH_LONG).show();
                     Intent registerIntent = new Intent(LoginActivity.this, RegisterActivity.class);
                     startActivity(registerIntent);
                 }
